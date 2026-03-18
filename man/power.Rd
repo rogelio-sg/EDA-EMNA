@@ -46,7 +46,7 @@ Jessica Victoria Martínez Medina.
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-power(a,b) 
+power(2,2) # 2^2 
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory (show via RShowDoc("KEYWORDS")):
