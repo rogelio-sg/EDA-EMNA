@@ -1,5 +1,5 @@
 \name{EuclidianDistance}
-\alias{EuclidianDistance}
+\alias{ed}
 \title{Euclidian Distance between n objects in an array}
 
 \usage{
@@ -7,7 +7,7 @@ ed(A, B)
 }
 
 \arguments{
-\item{x}{
+\item{A, B}{
   A: numeric vector of n samples
   B: numeric vector of n samples
   }
@@ -24,5 +24,5 @@ The Euclidean distance is the length "in a straight line" between two points in 
 \examples{
     a <- c(2, 1, 4)
     b <- c(4, 9, 8)
-    euclidean(a, b)
+    ed(a, b)
 }
