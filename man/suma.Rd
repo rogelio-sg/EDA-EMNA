@@ -5,7 +5,6 @@
 \usage{
 suma(a, b)
 }
-
 \arguments{
   \item{a}{
     Primer número a sumar
