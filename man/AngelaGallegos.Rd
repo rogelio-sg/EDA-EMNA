@@ -1,6 +1,6 @@
 \name{division}
 \alias{division}
-\title{division divide dos variables}
+\title{division de dos variables}
 
 \usage{
 division(x)
