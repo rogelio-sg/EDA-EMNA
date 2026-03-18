@@ -2,23 +2,21 @@ library(testthat)
 
 source("../../R/EuclidianDistance.R")
 
-# 3. Escribimos las pruebas
-test_that("EuclidianDistance calcula correctamente la magnitud de un solo vector", {
-  vector_a <- c(3, 4)
+test_that("ed calcula la distancia euclidiana exacta entre dos vectores", {
+  vector_1 <- c(0, 0)
+  vector_2 <- c(3, 4)
   
-  # Matemáticamente, la magnitud de (3,4) es sqrt(3^2 + 4^2) = 5
-  resultado <- EuclidianDistance(vector_a)
+  # Un triángulo rectángulo de lados 3 y 4 tiene una hipotenusa (distancia) de 5
+  expect_equal(ed(vector_1, vector_2), 5)
   
-  # Verificamos que el resultado sea exactamente 5
-  expect_equal(resultado, 5)
+  # La distancia de un vector tridimensional consigo mismo debe ser 0
+  expect_equal(ed(c(1, 2, 3), c(1, 2, 3)), 0)
 })
 
-test_that("EuclidianDistance calcula la distancia correcta entre dos vectores", {
-  vector_a <- c(0, 0)
-  vector_b <- c(3, 4)
+test_that("ed lanza un error si los vectores tienen longitudes diferentes", {
+  vector_corto <- c(1, 2)
+  vector_largo <- c(1, 2, 3)
   
-  # La distancia entre el origen (0,0) y el punto (3,4) también es 5
-  resultado <- EuclidianDistance(vector_a, vector_b)
-  
-  expect_equal(resultado, 5)
+  # expect_error verifica que el código falle y que el mensaje de error coincida
+  expect_error(ed(vector_corto, vector_largo), "Both vectors must be same size")
 })
