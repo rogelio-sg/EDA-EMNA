@@ -1,10 +1,8 @@
 # @AUTHOR: ENRIQUE GOMEZ - 18/03/26
 
-ed <- function(A){
-    sumatory = 0
-    for (object in A) {
-       sumatory <- (object**2) + sumatory
+ed <- function(A, B){
+    if (length(A) != length(B)) {
+       stop("Both vectors must be same size")
     }
-    return(sqrt(sumatory))
+    return(sqrt(sum((A - B)^2)))
 }
-
