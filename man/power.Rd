@@ -5,16 +5,19 @@
 A function that elevates a number a to the power of b.
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Eleva un número 'a' a la potencia 'b'.
 }
 \usage{
 power(x)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{
-%%     ~~Describe \code{x} here~~
+  \item{a}{
+  Base.
 }
+  \item{b}{
+  Exponente.
+  }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
@@ -25,12 +28,13 @@ power(x)
 %%  \item{comp1 }{Description of 'comp1'}
 %%  \item{comp2 }{Description of 'comp2'}
 %% ...
+\item{result} {Envía resultado de la operación power.}
 }
 \references{
 %% ~put references to the literature/web site here ~
 }
 \author{
-%%  ~~who you are~~
+Jessica Victoria Martínez Medina.
 }
 \note{
 %%  ~~further notes~~
@@ -42,14 +46,7 @@ power(x)
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or standard data sets, see data().
-
-## The function is currently defined as
-function (x) 
-{
-  }
+power(a,b) 
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory (show via RShowDoc("KEYWORDS")):
