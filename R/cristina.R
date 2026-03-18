@@ -1,7 +1,5 @@
 
-suma <- function(a, b) {
-  
+suma <- function(a, b) {  
   resultado <- a + b
-  
   return(resultado)
 }
