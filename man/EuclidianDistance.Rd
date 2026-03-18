@@ -14,7 +14,7 @@ ed(A, B)
 }
 
 \value{
-Returns a numeric value, which is the evaluation of the Euclidian Distance (d(P, Q) = \sqrt{\sum_{i=1}^{n} (p_i - q_i)^2}) \code{x}.
+Returns a numeric vector, which is the evaluation of the Euclidian Distance (d(P, Q) = \sqrt{\sum_{i=1}^{n} (p_i - q_i)^2}).
 }
 
 \description{
